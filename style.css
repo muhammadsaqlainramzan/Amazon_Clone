@@ -1,0 +1,293 @@
+*{
+    margin:0px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* A) Set properties of Navbour:- */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;/*It is used to make the navbor a flex box */
+    align-items: center;/*It is used to align the item vertically center*/
+    position: relative;/*Relative means position of box or items  will change with respect to itself */
+     justify-content: space-evenly;/* It will give equal space to all the elements of Navbor */
+}
+/* 1)Create logo of Amazon:- */
+#nav_logo{
+     width:114px;
+    height:55px;
+    margin-right: 1px;
+    display:inline-block;
+    background-image: url("1 Amazon logo.webp");
+    background-size: cover;/*cover means image will cover whole space.*/
+    margin:1px;
+}
+#nav_logo:hover{
+      border:2px solid white;
+}
+/* 2)In the Navbour to show location:- */
+#location{
+    width:92.41px;
+    height: 55px;
+    display: inline-block; /*It is used to place the div content in on the  line(Navbour)   */
+    align-content: center;
+}
+#loc_p{
+    font: 12px;
+    color: #cccccc;
+    margin-left:16px;
+    text-align: center;
+}
+#loc_p1{
+    font:14px;
+    color:#ffffff;
+    text-align: center;
+    /* display: inline-block; */
+}
+#location:hover{
+    border:2px solid white;
+}
+/* 3) Search section and button:- */
+ #nav_search{
+    margin-left: 2px;
+    width: 438px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    /* border-radius: 4px; */
+} 
+ #Select{
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+    width:50px;
+    background-color: #b8adad;
+}
+#Select:hover{
+    background-color:#cc7474 ;
+}
+#input{
+text-align: center;
+flex-grow: 1;
+/* width:334.73px; */
+height:40px;
+border:none; /*Here we set border of input  to zero so that we can finish minor distance between select,input and search icon option. */
+background-color: white;
+}
+#search_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:45px;
+    height:40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(197, 197, 72);
+    font-size: 1.5rem;/*It is used to increase the size of search icon*/
+} 
+#search_icon:hover{
+    background-color:rgb(152, 152, 4) ;
+}
+#nav_search:hover{
+ border-style:groove;    
+ border: 2px solid orange;
+ border-radius: 4px;
+}
+#Language{
+    color: white;
+}
+/* 5) Create Sign_in option:- */
+#sign_in{
+ color: #ffffff;
+ width: 113px;
+ height: 50px;
+ align-content: center;
+ padding-left: 4px;
+}
+#Hello{
+    font-size: 12px;
+}
+#Account{
+    font-size: 14px;
+    font-weight: 700;
+}
+#sign_in:hover{
+  border: 2px solid white;
+}
+/*6 Create Returns & Orders option:-*/
+#Returns_Orders{
+ color: #ffffff;
+ width: 66px;
+ height: 50px;
+ align-content: center;
+ padding-left: 4px;
+}
+#Returns{
+    font-size: 12px;
+}
+#Orders{
+    font-size: 14px;
+    font-weight: 700;
+}
+#Returns_Orders:hover{
+  border: 2px solid white;
+}
+/* 7) Create Cart option:- */
+#Cart{
+    color: white;
+    width: 84px;
+    height: 50px;
+    display: flex;              /* Enables Flexbox */
+    align-items: center;        /* Vertically centers items */
+    justify-content: center;    /* Horizontally centers content (optional) */
+}
+#Cart_icon{
+   font-size: 30px;}
+#Ca{
+   font: 14px;
+   font-weight: 700;
+}
+#Cart:hover{
+    border: 2px solid white;
+}
+/* B) Create Bar which contain ALL,Today,s Deal,Registery etc options:- */
+#Panel{
+    height:39px;
+    background-color: #232F3E;
+     display: flex;
+     align-items: center;
+}
+ /* All Bar in Second Navbor */
+#Bars_All{
+    color: white;
+    display: flex;
+    width: 58px;
+    height: 35px;
+    font-size: 25px;
+    margin-left: 10px;
+    padding-left: 4px;
+}
+#Bars{
+    justify-content: center;
+    align-content: center;
+}
+#All{
+     justify-content: center;
+    align-content: center;
+}
+#Bars_All:hover{
+   border:2px solid white;
+}
+/* Different options in Second Navbor */
+#Options{
+
+   display:flex ;
+   color: white;
+   font-size: 16px;
+}
+.op{
+    height: 35px;
+    margin-left: 20px;
+    align-content: center;
+}
+/* Here we created the class named ho and we will set border property in it and the we use that class name
+ with other class name that when we hover it create the border */
+.ho{
+    border: 2px solid transparent;
+}
+.ho:hover{
+    border: 2px solid white;
+}
+/* Hero Section */
+#Hero_Section{
+    background-image: url(Hero_Section.jpg);
+    height: 280px;
+    background-size: cover;
+}
+/* C)Shop Section */
+#Shop_Section{
+display: flex;
+flex-wrap: wrap;
+background-color: #b8adad;
+justify-content: space-evenly;
+}
+.box{
+height:400px;
+width: 23%;
+margin:10px;
+font-size: 18px;
+background-color: white;
+background-clip: content-box;
+}
+.Box_Image{
+    height: 320px; 
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-size: cover;
+}
+#Content{
+    padding: 20px 10px 5px 10px;
+}
+#Content a{/*This line says that in the id="Content" to the anchor tag (which is represented by "a") give it a color  */
+    color: #007181;
+}
+/* Footer Part of the website */
+/* 1)First Footer Part of the website */
+#Foot_Panel1{
+margin-top: 15px;
+background-color: #0f1111;
+color: white;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 13px;
+}
+/* 2)Second Footer Part of the website */
+#Foot_Panel2{
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    height: 220px;
+}
+ul a{
+    display: block;
+    font-size: 14px;
+    color:#dddddd;
+}
+ul p{
+    font-size: 16px;
+}
+/*3)Third Footer Part of the website */
+#Foot_Panel3{
+    height:70px;
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid #dddddd;
+    display: flex;
+     justify-content: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#logo{
+    background-image: url("1 Amazon logo.webp");
+    height:65px;
+    width: 100px;
+    background-size: cover;
+}
+/*4)Forth Footer Part of the website */
+#Foot_Panel4{
+    height: 40px;
+    background-color:#0f1111;
+    color: white;
+    font-size: 12px;
+     text-align: center;
+     padding-top: 25px;
+}
+#Copy_Right{
+    padding-top: 5px;
+}
