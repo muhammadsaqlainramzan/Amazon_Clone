@@ -1,0 +1,1 @@
+This is  Amazon Clone website built using modern web development technologies. It contains basic functionality of the official Amazon homepage, including product listings, navigation bar, responsive layout, and more.
